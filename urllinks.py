@@ -10,6 +10,7 @@ ctx.verify_mode = ssl.CERT_NONE
 url = input('Enter url- ')
 count = int(input('Enter count- '))
 position = int(input('Enter position- '))
+
 for i in range(count):
 	html = urllib.request.urlopen(url, context=ctx).read()
 	soup = BeautifulSoup(html, 'html.parser')
