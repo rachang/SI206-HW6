@@ -27,6 +27,6 @@ for i in range(count):
 	for tag in tags:
 	   	x = tag.get('href', None)
 	   	links.append(x)
-	print(links[position-1])
 	url = links[position-1]
+	print(url)
 print("Final:", url)
